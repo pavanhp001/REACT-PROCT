@@ -7,6 +7,12 @@ import ThemeContextProvider from "./components/theme-context-provider";
 import UpvoteBtn from "./components/upvote-btn";
 
 export default function Home() {
+
+  const user = {
+    email : "john@gmail.com",
+    password: "12345",
+
+  };
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
@@ -17,7 +23,9 @@ export default function Home() {
         </ThemeContextProvider>
         
         {/* <FavoriteBtn/> */}
-         <Sidebar/> 
+         {/* <Sidebar/>  */}
+
+         <FavoriteBtn user={user}/>
         {/*here side bar is client comp internally it have favorite btn */}
         {/* //if we want to add new button and use and client component for this entire component becouse for the only button
         <button onClick={() => {}}>Update</button> */}
