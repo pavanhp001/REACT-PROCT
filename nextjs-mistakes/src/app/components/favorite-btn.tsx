@@ -7,7 +7,7 @@ import {HeartFilledIcon, HeartIcon} from "@radix-ui/react-icons";
 import { compileFunction } from 'vm'
 
 export default function FavoriteBtn({ user }) {
-console.log(user);
+console.log(user);// we wont see server component logs in browser console
 const [isFavorite, setIsFavorite] = useState(false);
   return (
     <button onClick={() => setIsFavorite((prev)=> !prev)}
