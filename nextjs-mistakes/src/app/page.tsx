@@ -3,6 +3,7 @@
 import FavoriteBtn from "./components/favorite-btn";
 import Product from "./components/product";
 import Sidebar from "./components/sidebar";
+import ThemeContextProvider from "./components/theme-context-provider";
 import UpvoteBtn from "./components/upvote-btn";
 
 export default function Home() {
@@ -11,7 +12,10 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         
         <h1>My store </h1>
-        <Product/>
+         <ThemeContextProvider> {/* this is client componet */}
+           <Product/>           {/*this is server component, here client comp wrapping the the server copm but here this is not client comp here its children of the ThemeContextProvider */}
+        </ThemeContextProvider>
+        
         {/* <FavoriteBtn/> */}
          <Sidebar/> 
         {/*here side bar is client comp internally it have favorite btn */}
