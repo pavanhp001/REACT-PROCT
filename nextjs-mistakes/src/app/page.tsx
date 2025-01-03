@@ -1,4 +1,3 @@
-import Image from "next/image";
 import FavoriteBtn from "./components/favorite-btn";
 import Product from "./components/product";
 
