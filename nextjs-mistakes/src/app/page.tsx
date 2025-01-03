@@ -1,3 +1,5 @@
+// this should not use as client component becouse we lose the default Server component behavioiur 
+//if we add "use client" to tla page becomes cleint comp means product also become client.
 import FavoriteBtn from "./components/favorite-btn";
 import Product from "./components/product";
 
