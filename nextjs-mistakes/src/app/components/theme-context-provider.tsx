@@ -12,7 +12,7 @@ export default function ThemeContextProvider({ children }) {
             setTheme,
         }}
         >
-            <Product/>
+          <Product/> {/* its also working as server comp */}
         {children}
     </ThemeContext.Provider>
     
