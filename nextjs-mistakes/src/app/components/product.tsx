@@ -1,3 +1,5 @@
+// "use server"; If we manually give use server it will give Cannot update a component (`Router`) while rendering a different component (`default`). To locate the bad setState() call inside `default`, follow the stack trace as described in 
+// and it will behaves un expacted things in the console
 import React from 'react'
 
 export default async function Product() { // here we dont have any hooks and async function so its SSR component
