@@ -2,6 +2,7 @@
 //if we add "use client" to tla page becomes cleint comp means product also become client.
 import FavoriteBtn from "./components/favorite-btn";
 import Product from "./components/product";
+import Sidebar from "./components/sidebar";
 import UpvoteBtn from "./components/upvote-btn";
 
 export default function Home() {
@@ -11,7 +12,9 @@ export default function Home() {
         
         <h1>My store </h1>
         <Product/>
-        <FavoriteBtn/>
+        {/* <FavoriteBtn/> */}
+         <Sidebar/> 
+        {/*here side bar is client comp internally it have favorite btn */}
         {/* //if we want to add new button and use and client component for this entire component becouse for the only button
         <button onClick={() => {}}>Update</button> */}
         {/* Instead create new component and update it as client component */}
